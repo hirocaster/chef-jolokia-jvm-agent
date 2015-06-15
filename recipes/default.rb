@@ -19,7 +19,7 @@ end
 version = node['jolokia-jvm-agent']['version']
 
 remote_file "#{install_dir}/jolokia-jvm-#{version}-agent.jar" do
-  source "http://labs.consol.de/maven/repository/org/jolokia/jolokia-jvm/#{version}/jolokia-jvm-#{version}-agent.jar"
+  source "https://repo1.maven.org/maven2/org/jolokia/jolokia-jvm/#{version}/jolokia-jvm-#{version}-agent.jar"
   owner 'root'
   group 'root'
   mode '0644'
