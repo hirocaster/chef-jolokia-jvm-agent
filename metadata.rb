@@ -5,3 +5,4 @@ license          'All rights reserved'
 description      'Installs/Configures jolokia-jvm-agent'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
+source_url       'https://github.com/hirocaster/chef-jolokia-jvm-agent'

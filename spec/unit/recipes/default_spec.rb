@@ -15,7 +15,7 @@ describe 'jolokia-jvm-agent::default' do
       context "on #{platform.capitalize} #{version}" do
         let(:chef_run) do
           ChefSpec::SoloRunner.new(log_level: :error, platform: platform, version: version) do |node|
-            node.set['jolokia-jvm-agent']['version'] = '1.2.3'
+            node.set['jolokia-jvm-agent']['version'] = '1.3.2'
             node.set['jolokia-jvm-agent']['dir'] = '/opt/jolokia'
           end.converge(described_recipe)
         end
@@ -25,12 +25,12 @@ describe 'jolokia-jvm-agent::default' do
         end
 
         it 'creates the jolokia-jvm-agent jar file' do
-          expect(chef_run).to create_remote_file('/opt/jolokia/jolokia-jvm-1.2.3-agent.jar').with(owner: 'root')
+          expect(chef_run).to create_remote_file('/opt/jolokia/jolokia-jvm-1.3.2-agent.jar').with(owner: 'root')
         end
 
         it 'creates a link to the jolokia-jvm-agent' do
           expect(chef_run).to create_link('/opt/jolokia/jolokia-jvm-agent.jar').with(
-            to: '/opt/jolokia/jolokia-jvm-1.2.3-agent.jar')
+            to: '/opt/jolokia/jolokia-jvm-1.3.2-agent.jar')
         end
       end
     end

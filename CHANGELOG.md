@@ -11,6 +11,7 @@ This file is used to list changes made in each version of the jolokia-jvm-agent 
 -----
 - [fishnix] - Add basic unit and integration tests
 - [fishnix] - Minor style fixes, add Berksfile, .gitignore
+- [fishnix] - Upgrade to 1.3.2
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
