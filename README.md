@@ -57,4 +57,5 @@ Contributing
 
 License and Authors
 -------------------
+License: MIT
 Authors: hirocaster
