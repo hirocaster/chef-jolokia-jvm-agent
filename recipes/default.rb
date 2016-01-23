@@ -9,7 +9,7 @@
 
 install_dir = node['jolokia-jvm-agent']['dir']
 
-directory "#{install_dir}" do
+directory install_dir do
   owner 'root'
   group 'root'
   mode '0755'
