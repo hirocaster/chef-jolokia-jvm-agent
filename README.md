@@ -17,13 +17,13 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['jolokia-jvm-agent']['version]</tt></td>
+    <td><tt>['jolokia-jvm-agent']['version']</tt></td>
     <td>String</td>
-    <td>viersion number</td>
-    <td><tt>1.2.3</tt></td>
+    <td>version number</td>
+    <td><tt>1.3.2</tt></td>
   </tr>
   <tr>
-    <td><tt>['jolokia-jvm-agent']['dir]</tt></td>
+    <td><tt>['jolokia-jvm-agent']['dir']</tt></td>
     <td>String</td>
     <td>Install directory</td>
     <td><tt>/opt/jolokia</tt></td>
